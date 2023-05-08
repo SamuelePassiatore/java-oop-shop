@@ -12,10 +12,10 @@ public class Prodotto {
     
     public Prodotto(String nome, String descrizione, double prezzo, double iva) {
     	this.codice = generaCodice();
-    	this.nome = nome;
-    	this.descrizione = descrizione;
-    	this.prezzo = prezzo;
-    	this.iva = iva;
+    	setNome(nome);
+    	setDescrizione(descrizione);
+    	setPrezzo(prezzo);
+    	setIva(iva);
     }
     
     public int getCodice() {
@@ -73,6 +73,19 @@ public class Prodotto {
     
     public String getCodiceSpecialFormat() {
     	return String.format("%08d", codice);
+    }
+    
+    @Override
+    public String toString() {
+        return "Codice: " + this.getCodice() + 
+                ", Nome: " + this.getNome() +
+                ", Descrizione: " + this.getDescrizione() +
+                ", Prezzo: " + this.getPrezzo() +
+                ", IVA: " + this.getIva() +
+                ", Prezzo base: " + this.getPrezzoBase() +
+                ", Prezzo con IVA: " + this.getPrezzoConIva() +
+                ", Nome esteso: " + this.getNomeEsteso() +
+                ", Codice Formato Speciale: " + this.getCodiceSpecialFormat();
     }
     
     

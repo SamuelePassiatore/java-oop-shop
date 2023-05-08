@@ -52,7 +52,6 @@ public class Conto {
     }
     
     public String formattaSaldo(double saldo) {
-    	DecimalFormat df = new DecimalFormat("#,###.##");
-    	return df.format(saldo) + "€";
+    	return saldo + "€";
     }
 }

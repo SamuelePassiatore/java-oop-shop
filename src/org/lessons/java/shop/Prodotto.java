@@ -68,7 +68,7 @@ public class Prodotto {
     
     private int generaCodice() {
     	Random r = new Random();
-    	return r.nextInt(100000000);
+    	return r.nextInt(1000);
     }
     
     public String getCodiceSpecialFormat() {

@@ -54,15 +54,15 @@ public class Prodotto {
     	this.iva = iva;
     }
     
-    public double prezzoBase() {
+    public double getPrezzoBase() {
     	return prezzo;
     }
     
-    public double prezzoConIva() {
+    public double getPrezzoConIva() {
     	return prezzo + (prezzo*iva)/100;
     }
     
-    public String nomeEsteso() {
+    public String getNomeEsteso() {
     	return codice + "-" + nome;
     }
     

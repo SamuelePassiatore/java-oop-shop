@@ -54,4 +54,12 @@ public class Conto {
     public String formattaSaldo(double saldo) {
     	return saldo + "€";
     }
+    
+    @Override
+	public String toString() {
+
+		return "[" + getNumeroConto() + "] - " 
+				+ getNomeProprietario() 
+				+ "\nbalance: " + getSaldo();
+	}
 }
